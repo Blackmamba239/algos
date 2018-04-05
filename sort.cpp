@@ -15,9 +15,27 @@ using namespace std;
 void bubbleSort(auto & D){
 
 for(auto i = 0u; i < D.size(); i++)
+{
+    if(i == 20000)
+    cout<<" First pass completed.."<<endl;
+
+        
+    if(i == 40000)
+    cout<<" Second pass completed.."<<endl;
+    
+    if(i == 60000)
+    cout<<" Third pass completed.."<<endl;
+      
+    if(i == 80000)   
+    cout<<" Fourth pass completed.."<<endl;
+
+    if(i == 100000) 
+    cout<<" Fifth pass completed.."<<endl;
 for(auto j = 0u; j < D.size()-1; j++)
      if(D[j] > D[j+1])
 	swap(D[j], D[j+1]);
+}
+
 }
 
 
